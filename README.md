@@ -1,5 +1,7 @@
 # LLM-model_love
 
+![](https://github.com/Shuai1Wen/LLM-model_love/blob/main/1.webp)
+
 #大模型项目-省港澳金牌理想恋人培训讲师
 --
 还在苦恼追不到你心爱的他/她，收获不了甜蜜的爱情而苦恼吗？还在因为每次被发好人卡而伤心吗？还在因为遇到对方的爱情测验没有回答上来降低好感而苦恼吗？
