@@ -57,5 +57,5 @@ pip install -e '.[deepspeed]'
 cd /root/InternLM/XTuner
 xtuner train ./internlm2_chat_1_8b_qlora_alpaca_e3_copy.py --deepspeed deepspeed_zero2 即可开始训练
 
-并通过streamlit run /root/InternLM/Tutorial/tools/xtuner_streamlit_demo.py进行web可视化
-
+并通过streamlit run xtuner_streamlit_demo.py进行web可视化
+（这里需要对应的端口映射）
