@@ -25,3 +25,37 @@
 风格模拟：模拟专业的玄学专家，时尚达人和爱情心理学家，幽默风趣而又不乏正式风格的建议会回答；
 
 互动体验：用户可以通过提问和交流的方式与模型进行互动，就像和一个知心朋友一样给你正确合理有帮助的建议/
+
+本模型是基于Xtuner来进行对应的训练和微调的
+# 安装一些必要的库
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia -y
+# 安装其他依赖
+pip install transformers==4.39.3
+pip install streamlit==1.36.0
+
+2.3 安装 XTuner
+虚拟环境创建完成后，就可以安装 XTuner 了。首先，从 Github 上下载源码。
+
+# 创建一个目录，用来存放源代码
+mkdir -p /root/InternLM/code
+
+cd /root/InternLM/code
+
+git clone -b v0.1.21  https://github.com/InternLM/XTuner /root/InternLM/code/XTuner
+其次，进入源码目录，执行安装。
+
+# 进入到源码目录
+cd /root/InternLM/code/XTuner
+conda activate xtuner0121
+
+# 执行安装
+pip install -e '.[deepspeed]'
+
+对应的模型参数文件位于：LLM-model_love/finetune_configs中的internlm2_chat_8b文件
+
+通过代码：
+cd /root/InternLM/XTuner
+xtuner train ./internlm2_chat_1_8b_qlora_alpaca_e3_copy.py --deepspeed deepspeed_zero2 即可开始训练
+
+并通过streamlit run /root/InternLM/Tutorial/tools/xtuner_streamlit_demo.py进行web可视化
+
