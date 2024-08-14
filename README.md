@@ -59,3 +59,8 @@ xtuner train ./internlm2_chat_1_8b_qlora_alpaca_e3_copy.py --deepspeed deepspeed
 
 并通过streamlit run xtuner_streamlit_demo.py进行web可视化
 （这里需要对应的端口映射）
+#对应的结果示例
+![](https://github.com/Shuai1Wen/LLM-model_love/blob/main/2.png)
+![](https://github.com/Shuai1Wen/LLM-model_love/blob/main/3.png)
+
+
